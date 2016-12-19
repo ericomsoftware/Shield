@@ -17,8 +17,6 @@ services:
         image: securebrowsing/shield-broker
         hostname: broker
         restart: always
-        volumes:
-            - /dev/shm:/dev/shm 
     elk:
         image: sebp/elk
         hostname: elk
