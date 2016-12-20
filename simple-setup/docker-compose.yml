@@ -5,8 +5,7 @@ services:
         image: securebrowsing/shield-browser:latest
         restart: always
         hostname: browser
-        volumes:
-            - /dev/shm:/dev/shm 
+        shm_size: 1GB
     shield-proxy:
         image: securebrowsing/shield-proxy
         hostname: proxy
